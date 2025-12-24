@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    min-height: calc(100vh - 120px);
+}
+
+#header {
+    transition: transform 0.35s ease, opacity 0.25s ease;
+    will-change: transform, opacity;
+}
+#header.header-hidden {
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+.back-to-top {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Simple motion primitives */
+.fade-in {
+    animation: fade-in 0.8s ease forwards;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    will-change: opacity, transform;
+}
+.reveal.show {
+    animation: rise 0.9s ease forwards;
+}
+.reveal.slide-left { transform: translateX(-18px); }
+.reveal.slide-left.show { animation: slide-left 0.85s ease forwards; }
+.reveal.slide-right { transform: translateX(18px); }
+.reveal.slide-right.show { animation: slide-right 0.85s ease forwards; }
+.reveal.zoom { transform: scale(0.96); }
+.reveal.zoom.show { animation: zoom-in 0.8s ease forwards; }
+.reveal.tilt { transform: translateY(14px) rotate(-1.5deg); }
+.reveal.tilt.show { animation: tilt-up 0.9s ease forwards; }
+.reveal.fade.show {
+    animation: fade-in 0.85s ease forwards;
+}
+.delay-1 { animation-delay: 0.35s; }
+.delay-2 { animation-delay: 0.55s; }
+.delay-3 { animation-delay: 0.75s; }
+.delay-4 { animation-delay: 0.95s; }
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes rise {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-left {
+    from { opacity: 0; transform: translateX(-16px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-right {
+    from { opacity: 0; transform: translateX(16px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes zoom-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes tilt-up {
+    from { opacity: 0; transform: translateY(16px) rotate(-1.5deg); }
+    to { opacity: 1; transform: translateY(0) rotate(0deg); }
+}

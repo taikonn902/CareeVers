@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-3hLLJoCq114F8CbnMD4HzyBbs6k8ZZrVSu2Ce279b9Ec/WWEDuJeayQMZT6X0hgqP/d9vywgqbiZ9erjRzNKXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>CareeVerse Forum</title>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-50" id="body">
+    <!-- Header -->
+    <header class="flex justify-center items-center w-full py-5 fade-in sticky top-0 z-40" id="header">
+        <div
+            class="w-[92%] mx-auto h-16 bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-between rounded-full px-6 shadow-2xl shadow-cyan-500/20 border border-white/10">
+            <a href="index.html" title="CareeVerse AI">
+                <span class="text-white font-extrabold text-2xl tracking-tight">CareeVerse</span>
+            </a>
+            <nav>
+                <ul class="flex items-center gap-6 text-sm font-semibold">
+                    <li><a href="#body" class="text-white/90 hover:text-white transition-colors">Trang chủ</a></li>
+                    <li><a href="#tinh-nang" class="text-white/70 hover:text-white transition-colors">Tính Năng AI</a>
+                    </li>
+                    <li><a href="#forum" class="text-white/70 hover:text-white transition-colors">Forum</a></li>
+                    <li><a href="#events" class="text-white/70 hover:text-white transition-colors">Sự Kiện</a></li>
+                    <li><a href="#cta" class="text-white/90 hover:text-amber-200 transition-colors">Tham Gia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-[92%] mx-auto pb-16">
+        <!-- Hero -->
+        <section id="gioi-thieu" class="grid lg:grid-cols-2 gap-10 items-center pt-6 hero-section">
+            <div class="space-y-6 reveal show">
+                <span
+                    class="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2 text-sm uppercase tracking-[0.15em] text-amber-200 font-semibold shadow-lg shadow-cyan-500/10">
+                    Forum AI định hướng nghề nghiệp
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                </span>
+                <h1 class="text-4xl lg:text-5xl font-black leading-tight text-white">
+                    CareeVerse AI: cộng đồng & AI đồng hành cho lộ trình nghề nghiệp
+                </h1>
+                <p class="text-lg text-slate-200/80 leading-relaxed">
+                    Nền tảng AI hiểu bạn từ học tập, sở thích, tính cách, phong cách làm việc cho tới hành vi trong
+                    game.
+                    AI đối chiếu với bộ kỹ năng chuẩn từng nghề, gợi ý nghề và kỹ năng cần bù đắp, tự điều chỉnh ưu tiên
+                    dựa trên phản hồi của bạn.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#cta"
+                        class="px-6 py-3 rounded-full bg-amber-300 text-slate-900 font-bold shadow-lg shadow-amber-300/40 hover:translate-y-[-2px] transition-transform">Bắt
+                        đầu với CareeVerse AI</a>
+                    <a href="#forum"
+                        class="px-6 py-3 rounded-full border border-white/20 text-white hover:border-amber-200 hover:text-amber-200 transition-colors">Xem
+                        thảo luận</a>
+                </div>
+                <div class="flex gap-6 text-sm text-white/70">
+                    <div>
+                        <p class="text-3xl font-extrabold text-emerald-300">12k+</p>
+                        <p>Thành viên đang hoạt động</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-extrabold text-cyan-300">1.8k</p>
+                        <p>Chủ đề AI & nghề nghiệp</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-extrabold text-amber-200">240</p>
+                        <p>Sự kiện & workshop</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative reveal delay-1">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-amber-300/10 to-fuchsia-500/10 blur-3xl -z-10">
+                </div>
+                <div
+                    class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-cyan-500/15 p-6 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <p class="text-white font-semibold">CareeVerse AI overview</p>
+                        <span
+                            class="text-xs text-emerald-50 px-3 py-1 rounded-full bg-gradient-to-r from-emerald-400/60 to-cyan-400/60 border border-emerald-200/50 shadow-sm shadow-emerald-300/30 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-100 animate-ping"></span>
+                            Realtime
+                        </span>
+                    </div>
+
+                    <div class="grid gap-4 lg:grid-cols-[1.2fr_1fr]">
+                        <div class="relative rounded-2xl overflow-hidden bg-slate-900/60 border border-white/5"
+                            data-slider="overview">
+                            <div class="relative h-full min-h-[320px]">
+                                <div class="absolute inset-0 transition-all duration-500 ease-out" data-slide="0">
+                                    <img src="assets/images/overview.jpg" alt="Minh họa CareeVerse AI 1"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="absolute inset-0 transition-all duration-500 ease-out" data-slide="1">
+                                    <img src="assets/images/overview2.jpg" alt="Minh họa CareeVerse AI 2"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="absolute inset-0 transition-all duration-500 ease-out" data-slide="2">
+                                    <img src="assets/images/overview3.jpg" alt="Minh họa CareeVerse AI 3"
+                                        class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-slate-950/0 to-transparent pointer-events-none">
+                            </div>
+                            <button type="button" data-action="prev" aria-label="Prev"
+                                class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/70 hover:bg-slate-900/85 border border-white/25 text-white backdrop-blur-sm transition flex items-center justify-center text-lg leading-none shadow-sm">‹</button>
+                            <button type="button" data-action="next" aria-label="Next"
+                                class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/70 hover:bg-slate-900/85 border border-white/25 text-white backdrop-blur-sm transition flex items-center justify-center text-lg leading-none shadow-sm">›</button>
+                            <div class="dots absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+                                <button data-dot="0" aria-label="Slide 1"
+                                    class="w-2.5 h-2.5 rounded-full bg-white/40 border border-white/30 transition-colors"></button>
+                                <button data-dot="1" aria-label="Slide 2"
+                                    class="w-2.5 h-2.5 rounded-full bg-white/20 border border-white/20 transition-colors"></button>
+                                <button data-dot="2" aria-label="Slide 3"
+                                    class="w-2.5 h-2.5 rounded-full bg-white/20 border border-white/20 transition-colors"></button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div
+                                class="rounded-2xl border border-white/5 bg-slate-900/70 p-4 space-y-2 shadow-lg shadow-cyan-500/10">
+                                <p class="text-sm text-white/80 font-semibold">Dữ liệu CareeVerse AI</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-emerald-400/90 text-slate-900 text-xs font-semibold shadow">Hồ
+                                        sơ 360°</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-cyan-300/90 text-slate-900 text-xs font-semibold shadow">MBTI
+                                        · Holland/RIASEC</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-amber-300/90 text-slate-900 text-xs font-semibold shadow">Khoảng
+                                        trống kỹ năng</span>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-fuchsia-200/90 text-slate-900 text-xs font-semibold shadow">Hành
+                                        vi trong game</span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-3 text-xs text-white/70">
+                                <div class="p-3 rounded-2xl bg-white/5 border border-white/10">
+                                    <p class="text-xl font-bold text-emerald-300">24+</p>
+                                    <p>Dữ liệu hồ sơ</p>
+                                </div>
+                                <div class="p-3 rounded-2xl bg-white/5 border border-white/10">
+                                    <p class="text-xl font-bold text-cyan-300">x2</p>
+                                    <p>Độ chính xác sau feedback</p>
+                                </div>
+                                <div class="p-3 rounded-2xl bg-white/5 border border-white/10">
+                                    <p class="text-xl font-bold text-amber-200">Live</p>
+                                    <p>Học từ hành vi game</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature highlights -->
+        <section id="tinh-nang" class="mt-16 space-y-6 reveal delay-2">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/50">CareeVerse AI</p>
+                    <h2 class="text-2xl font-bold text-white mt-1">AI hiểu bạn & cá nhân hóa nghề nghiệp</h2>
+                </div>
+                <a href="#cta" class="text-sm text-amber-200 hover:text-white transition-colors">Dùng thử miễn phí</a>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-5">
+                <div
+                    class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-cyan-300/60 transition-colors space-y-3">
+                    <p class="text-lg font-semibold text-white">Hồ sơ 360°</p>
+                    <p class="text-sm text-white/70">Thu thập học tập, khối thi, sở thích, hứng thú nghề nghiệp, tính
+                        cách, phong cách làm việc.</p>
+                    <p class="text-xs text-emerald-300 font-semibold">Đầu vào giàu ngữ cảnh</p>
+                </div>
+                <div
+                    class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-amber-200/70 transition-colors space-y-3">
+                    <p class="text-lg font-semibold text-white">Phân tích chuẩn nghề</p>
+                    <p class="text-sm text-white/70">Đối chiếu kỹ năng hiện có với bộ chuẩn từng nghề, phát hiện khoảng
+                        trống kỹ năng & đề xuất khóa học.</p>
+                    <p class="text-xs text-emerald-300 font-semibold">Roadmap cá nhân hóa</p>
+                </div>
+                <div
+                    class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-fuchsia-200/60 transition-colors space-y-3">
+                    <p class="text-lg font-semibold text-white">Tự học từ phản hồi</p>
+                    <p class="text-sm text-white/70">Người dùng chấm “thấy đúng” → AI tự điều chỉnh tăng/giảm ưu tiên
+                        nghề, càng dùng càng chính xác.</p>
+                    <p class="text-xs text-emerald-300 font-semibold">Reinforcement từ cộng đồng</p>
+                </div>
+                <div
+                    class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-200/60 transition-colors space-y-3">
+                    <p class="text-lg font-semibold text-white">Kết hợp hành vi trong game</p>
+                    <p class="text-sm text-white/70">Quan sát cách bạn xử lý nhiệm vụ, phân bổ thời gian, rủi ro & áp
+                        lực để lọc lại nghề phù hợp.</p>
+                    <p class="text-xs text-emerald-300 font-semibold">Đánh giá năng lực ẩn</p>
+                </div>
+                <div
+                    class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-emerald-200/60 transition-colors space-y-3">
+                    <p class="text-lg font-semibold text-white">Tích hợp bài test</p>
+                    <p class="text-sm text-white/70">MBTI, Holland/RIASEC, kỹ năng hiện tại được ánh xạ tự động sang các
+                        nhóm nghề.</p>
+                    <p class="text-xs text-emerald-300 font-semibold">Chuẩn hóa chấm điểm</p>
+                </div>
+                <div
+                    class="p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-amber-200/60 transition-colors space-y-3">
+                    <p class="text-lg font-semibold text-white">Forum chia sẻ</p>
+                    <p class="text-sm text-white/70">Mentor, recruiter, AI builder trao đổi case, prompt, bộ dữ liệu
+                        phục vụ CareeVerse AI.</p>
+                    <p class="text-xs text-emerald-300 font-semibold">Cộng đồng đồng kiến tạo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forum threads -->
+        <section id="forum" class="mt-16 space-y-6 reveal delay-3">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/50">Chủ đề nổi bật</p>
+                    <h2 class="text-2xl font-bold text-white mt-1">Top thảo luận về CareeVerse AI</h2>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-white/70">
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-300"></span>Đang
+                        sôi nổi</span>
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-amber-300"></span>Chờ
+                        phản hồi</span>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-5">
+                <article
+                    class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-cyan-300/60 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm text-white/70">Case Study</p>
+                        <span
+                            class="text-xs px-3 py-1 rounded-full bg-emerald-300/20 text-emerald-200 border border-emerald-300/30">Đang
+                            sôi nổi</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mt-2">AI gợi ý nghề từ dữ liệu MBTI + hành vi trong game
+                    </h3>
+                    <p class="text-sm text-white/70 mt-2">Pipeline ingest dữ liệu, rule chuẩn hóa, prompt ánh xạ RIASEC
+                        và cơ chế feedback loop.</p>
+                    <div class="flex items-center gap-4 text-xs text-white/60 mt-4">
+                        <span>45 bình luận</span>
+                        <span>326 lượt xem</span>
+                        <span>Ngày đăng: 12/12</span>
+                    </div>
+                </article>
+                <article
+                    class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-amber-200/60 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm text-white/70">Prompt Review</p>
+                        <span
+                            class="text-xs px-3 py-1 rounded-full bg-amber-200/20 text-amber-100 border border-amber-200/40">Chờ
+                            phản hồi</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mt-2">Prompt chấm mức “thấy đúng” và tinh chỉnh ưu tiên
+                        nghề</h3>
+                    <p class="text-sm text-white/70 mt-2">Cách thiết kế form phản hồi, trọng số, và log dữ liệu huấn
+                        luyện lại.</p>
+                    <div class="flex items-center gap-4 text-xs text-white/60 mt-4">
+                        <span>18 bình luận</span>
+                        <span>210 lượt xem</span>
+                        <span>Ngày đăng: 11/12</span>
+                    </div>
+                </article>
+                <article
+                    class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-fuchsia-200/60 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm text-white/70">Career Talk</p>
+                        <span
+                            class="text-xs px-3 py-1 rounded-full bg-cyan-200/20 text-cyan-100 border border-cyan-200/40">Đang
+                            sôi nổi</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mt-2">Làm thế nào AI hiểu phong cách làm việc?</h3>
+                    <p class="text-sm text-white/70 mt-2">Các chỉ số ưu tiên: chủ động, phối hợp nhóm, xử lý rủi ro,
+                        deadline.</p>
+                    <div class="flex items-center gap-4 text-xs text-white/60 mt-4">
+                        <span>63 bình luận</span>
+                        <span>1.2k lượt xem</span>
+                        <span>Ngày đăng: 10/12</span>
+                    </div>
+                </article>
+                <article
+                    class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:border-emerald-200/60 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm text-white/70">Resources</p>
+                        <span
+                            class="text-xs px-3 py-1 rounded-full bg-emerald-200/20 text-emerald-100 border border-emerald-200/40">Đang
+                            sôi nổi</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mt-2">Bộ kỹ năng chuẩn cho từng nghề</h3>
+                    <p class="text-sm text-white/70 mt-2">Dataset mapping kỹ năng → nghề, hỗ trợ tạo roadmap & quiz kiểm
+                        tra khoảng trống.</p>
+                    <div class="flex items-center gap-4 text-xs text-white/60 mt-4">
+                        <span>27 bình luận</span>
+                        <span>640 lượt xem</span>
+                        <span>Ngày đăng: 09/12</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Events -->
+        <section id="events" class="mt-16 space-y-6 reveal delay-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/50">Sự kiện sắp tới</p>
+                    <h2 class="text-2xl font-bold text-white mt-1">Workshop & AMA</h2>
+                </div>
+                <a href="#" class="text-sm text-amber-200 hover:text-white transition-colors">Đăng ký</a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+                    <p class="text-xs text-white/60">14/12 · Zoom</p>
+                    <h3 class="text-lg font-semibold text-white mt-1">Build agent lọc CV với CareeVerse Bot</h3>
+                    <p class="text-sm text-white/70 mt-2">Hướng dẫn end-to-end, demo live, Q&A 30 phút.</p>
+                </div>
+                <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+                    <p class="text-xs text-white/60">17/12 · Discord</p>
+                    <h3 class="text-lg font-semibold text-white mt-1">AMA: AI hiểu phong cách làm việc</h3>
+                    <p class="text-sm text-white/70 mt-2">Hỏi đáp về scoring hành vi, áp lực, phân bổ thời gian.</p>
+                </div>
+                <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+                    <p class="text-xs text-white/60">20/12 · Onsite HN</p>
+                    <h3 class="text-lg font-semibold text-white mt-1">Career Clinic 1-1</h3>
+                    <p class="text-sm text-white/70 mt-2">Mentor review hồ sơ, roadmap và phản hồi AI “thấy đúng”.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="cta" class="mt-16 reveal delay-2">
+            <div
+                class="rounded-3xl border border-white/10 bg-gradient-to-r from-amber-300/20 via-cyan-300/10 to-blue-500/20 p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-cyan-500/10">
+                <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-white/70">Tham gia cộng đồng</p>
+                    <h3 class="text-2xl font-bold text-white mt-2">Kết nối mentor, recruiter, AI builder</h3>
+                    <p class="text-white/80 mt-2">Đăng ký miễn phí, tạo hồ sơ, nhận gợi ý lộ trình từ CareeVerse Bot và
+                        chia sẻ feedback để AI học cùng bạn.</p>
+                </div>
+                <div class="flex gap-3">
+                    <a href="#"
+                        class="px-6 py-3 rounded-full bg-slate-900 text-white font-semibold border border-white/20 hover:border-amber-200 hover:text-amber-200 transition-colors">Tạo
+                        tài khoản</a>
+                    <a href="mailto:hello@careeverse.ai"
+                        class="px-6 py-3 rounded-full bg-white text-slate-900 font-semibold shadow-lg shadow-amber-200/40 hover:translate-y-[-2px] transition-transform">Liên
+                        hệ đội ngũ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to top -->
+    <button id="backToTop" aria-label="Lên đầu trang"
+        class="back-to-top fixed bottom-[10px] right-[10px] z-50 w-10 h-10 rounded-[12px] bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-lg shadow-cyan-500/30 border border-white/30 flex items-center justify-center transition-transform duration-150 hover:-translate-y-[1px]">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" class="pointer-events-none">
+            <path d="M6 14.5l6-6 6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="w-[92%] mx-auto pb-10 text-sm text-white/60">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-3 border-t border-white/10 pt-6">
+            <p>© 2025 CareeVerse AI. Build sự nghiệp với cộng đồng + AI.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition-colors">Điều khoản</a>
+                <a href="#" class="hover:text-white transition-colors">Quyền riêng tư</a>
+                <a href="#" class="hover:text-white transition-colors">Hỗ trợ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/app.js"></script>
+
+</html>
